@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <LinearLayout
+        android:id="@+id/layImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgTid"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/baba" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Saisir votre numéro de téléphone"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layImg" />
+
+    <EditText
+        android:id="@+id/edtNum"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:hint="31123456"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSai" />
+
+    <TextView
+        android:id="@+id/txtOrange"
+        android:layout_width="219dp"
+        android:layout_height="22dp"
+        android:text="Votre Ligne est Orange"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum" />
+
+    <TextView
+        android:id="@+id/txt14"
+        android:layout_width="359dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="27dp"
+        android:text="Entrer votre code de recharge (13 chiffres)"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrange" />
+
+    <EditText
+        android:id="@+id/edtRecharge1"
+        android:layout_width="283dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="12345678901234"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="Recharger votre ligne"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRecharge1" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="222dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:hint="*123*12345678901234#"
+        android:inputType="number"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnAppel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/white"
+        android:text="Appeler"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="378dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="80dp"
+        android:text="Pour consulter le solde de votre ligne"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:hint="*122#"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/white"
+        android:text="Button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
